@@ -1,0 +1,23 @@
+ html, body {
+     width: 100%;
+     margin: 0;
+     height: 100%;
+     display: inline-block;
+     font-size: 0;
+
+
+ }
+.menu {
+    background-color: #000000;
+    height: 100%;
+    width: 380px;
+    display: inline-block;
+    font-size: 0;
+}
+.info {
+    background-color: #ffffff;
+    height: 100%;
+    width: calc(100% - 380px);
+    display: inline-block;
+    font-size: 0;
+}
