@@ -2,22 +2,84 @@
      width: 100%;
      margin: 0;
      height: 100%;
-     display: inline-block;
+ }
+
+ body {
      font-size: 0;
-
-
  }
 .menu {
     background-color: #000000;
     height: 100%;
     width: 380px;
     display: inline-block;
-    font-size: 0;
+    float: left;
+
 }
 .info {
-    background-color: #ffffff;
+    background-color: white;
     height: 100%;
     width: calc(100% - 380px);
     display: inline-block;
-    font-size: 0;
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.list li:before,
+.list li :after {
+    color: #C95153;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#main::before {
+    content: '\1F310';
+    margin-right: 10px;
+}
+
+#contact::before {
+    content: '\2709';
+    margin-right: 17px;
+}
+#about::before {
+    content: '\2047';
+    margin-right: 19px;
+}
+#facebook::before {
+    content: '\0066';
+    margin-right: 30px;
+}
+ a[target="_blank"]::after{
+    content: '\2197';
+}
+
+.descrition {
+    height: 100%;
+    font-size: 20px;
+    padding: 5px 60px 200px 60px;
+
+}
+p {
+    text-indent: 19px;
+
+}
+h4 {
+    font-size: 44px;
+    text-indent: 19px;
+}
+.menuTitle {
+    padding: 28px 50px 5px 50px;
+
 }
