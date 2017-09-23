@@ -11,31 +11,32 @@
 }
 .right {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
     flex: 1 0;
+    flex-direction: column;
+    align-content: stretch;
 }
 .blue {
-    height: 150px;
     background-color: #4472C4;
-    flex: 1 100%;
-    order: 1;
+    flex: 2 2 150px;
 }
 .green {
-    height: 75px;
     background-color: #70AD47;
-    flex: 1 100%;
-    order: 4;
+    flex: 1 1 75px;
+
+}
+.middle {
+    flex-direction: row;
+    display: flex;
+    flex: 5 5 100%;
+    flex-wrap:nowrap ;
 }
 .red {
     background-color: #FF2F2F;
-    height: calc(100% - 225px);
-    flex: 1 230px;s
-    order: 3;
+    flex: 1 1 230px;
+
 }
 .grey {
     background-color: #F2F2F2;
-    flex: 4 1px;
-    order: 2;
+    flex: 4 4 100%;
 }
-
