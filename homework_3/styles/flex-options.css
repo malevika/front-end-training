@@ -1,0 +1,41 @@
+.flex-container {
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.left {
+    width: 300px;
+    height: 100%;
+    background-color: #FFC000;
+}
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1 0;
+}
+.blue {
+    height: 150px;
+    background-color: #4472C4;
+    flex: 1 100%;
+    order: 1;
+}
+.green {
+    height: 75px;
+    background-color: #70AD47;
+    flex: 1 100%;
+    order: 4;
+}
+.red {
+    background-color: #FF2F2F;
+    height: calc(100% - 225px);
+    flex: 1 230px;s
+    order: 3;
+}
+.grey {
+    background-color: #F2F2F2;
+    flex: 4 1px;
+    order: 2;
+}
+
