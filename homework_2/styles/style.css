@@ -45,7 +45,7 @@ a {
 }
 
 #main::before {
-    content: '\1F310';
+    content: '\1F310\0020';
     margin-right: 10px;
 }
 
