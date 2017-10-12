@@ -34,6 +34,20 @@ html,body {
     grid-column: 7/9;
     grid-row:4;
 }
+.animate {
+    animation: colorchange 3s infinite;
+}
+.delay {
+    animation-delay: 1s;
+}
+.delay2 {
+    animation-delay: 2s;
+}
+@keyframes colorchange {
+0% {background-color: #FFffff;}
+50% {background-color: #a8a7a8;}
+100% {background-color: #FFffff;}
+}
 
 
 
