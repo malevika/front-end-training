@@ -83,7 +83,18 @@ html,body {
     transform: translate(10px, 0px);
     box-shadow: -13px 0px 17px 4px rgba(112,103,112,1);
 }
+@keyframes button {
+    0% {background-color: blue; color: orange;}
+    25% {background-color: yellow; color: green;}
+    50% {background-color: red; color: blue;}
+    75% {background-color: green; color: red;}
+    100% {background-color: orange; color: yellow;}
+}
 
+.animate-hover:hover {
+    animation: button 1s infinite;
+
+}
 
 
 
