@@ -11,6 +11,19 @@ html,body {
      grid-template-rows: repeat(4,50px);
      grid-template-columns: repeat(12, auto);
      border-bottom: solid 1px black;
+
+
+ }
+ p {
+
+     font-size: 18px;
+     text-align: center;
+ }
+ .textGallery {
+     margin-left: 50px;
+     margin-right: -52px;
+     writing-mode: tb-rl;
+     transform: rotate(-180deg);
  }
  .cell {
      border: 1px solid black;
