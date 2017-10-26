@@ -16,11 +16,22 @@
             <circle cx="10" cy="10" r="10" fill="#3C3C3C" ></circle>
             <circle cx="30" cy="30" r="10" fill="#3C3C3C" ></circle>
         </pattern>
+        <radialGradient id="GradientReflect" cx="2.1" cy="1.9" r="2.5" fx="0.5" fy="0.37">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#363636"/>
+            <stop offset="100%" stop-color="#363636"/>
+        </radialGradient>
     </defs>
     <rect  x="5" y="5" width="600" height="600" rx="20" stroke="black" stroke-width="3" fill="url(#firstLayer)"></rect>
     <rect  x="50" y="55" width="500" height="500" rx="20" stroke="black" stroke-width="3" fill="url(#firstLayer)"></rect>
     <rect  x="50" y="55" width="500" height="500" rx="20" stroke="black" stroke-width="3" fill="url(#circleIn)"></rect>
-    <path d="M130,120 h310 a 10 10 0 1 1 20 20  v310 a 10 10 0 1 1 -10 10"></path>
+    <path d="M145 120 l310 0 a 20 20 0 0 1 20 20 l0 270
+                             a 20 20 0 0 1 -20 20
+                             h-100 v25 h70 v25 h-250 v-25 h70 v-25 h-100
+                             a 20 20 0 0 1 -20 -20 v-270 a 20 20 0 0 1 23 -20"
+          fill="url(#firstLayer)" stroke="black" stroke-width="2"></path>
+    <rect x="150" y="150" width="300" height="250" fill="url(#GradientReflect)"></rect>
 
 </svg>
 
