@@ -9,19 +9,25 @@
 <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 700 700" width="700" height="700">
     <defs>
         <linearGradient id="firstLayer" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color: #BDBDBD"/>
-            <stop offset="100%" style="stop-color:#666666 "/>
+            <stop offset="0%" style="stop-color: #BDBDBD"></stop>
+            <stop offset="50%" style="stop-color:#666666 "></stop>
+            <stop offset="100%" style="stop-color:#BDBDBD "></stop>
         </linearGradient>
-        <pattern id="circleIn" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45deg)">
-            <circle cx="10" cy="10" r="10" fill="#3C3C3C" ></circle>
-            <circle cx="30" cy="30" r="10" fill="#3C3C3C" ></circle>
+        <pattern id="circleIn" width="40" height="40" patternUnits="userSpaceOnUse">
+            <circle cx="10" cy="10" r="10" fill="url(#circle)" ></circle>
+            <circle cx="30" cy="30" r="10" fill="url(#circle)" ></circle>
         </pattern>
-        <radialGradient id="GradientReflect" cx="2.1" cy="1.9" r="2.5" fx="0.5" fy="0.37">
-            <stop offset="0%" stop-color="#000000"/>
-            <stop offset="50%" stop-color="#000000"/>
-            <stop offset="50%" stop-color="#363636"/>
-            <stop offset="100%" stop-color="#363636"/>
+        <radialGradient id="Gradient1" cx="2.1" cy="1.9" r="2.5" fx="0.5" fy="0.37">
+            <stop offset="0%" stop-color="#000000"></stop>
+            <stop offset="50%" stop-color="#000000"></stop>
+            <stop offset="50%" stop-color="#363636"></stop>
+            <stop offset="100%" stop-color="#363636"></stop>
         </radialGradient>
+        <radialGradient id="circle" cx="0.5" cy="0.5" r="0.4" fx="0.75" fy="0.75">
+            <stop offset="0%" stop-color="#696969"></stop>
+            <stop offset="100%" stop-color="#000000"></stop>
+        </radialGradient>
+
     </defs>
     <rect  x="5" y="5" width="600" height="600" rx="20" stroke="black" stroke-width="3" fill="url(#firstLayer)"></rect>
     <rect  x="50" y="55" width="500" height="500" rx="20" stroke="black" stroke-width="3" fill="url(#firstLayer)"></rect>
@@ -31,7 +37,15 @@
                              h-100 v25 h70 v25 h-250 v-25 h70 v-25 h-100
                              a 20 20 0 0 1 -20 -20 v-270 a 20 20 0 0 1 23 -20"
           fill="url(#firstLayer)" stroke="black" stroke-width="2"></path>
-    <rect x="150" y="150" width="300" height="250" fill="url(#GradientReflect)"></rect>
+    <rect x="150" y="150" width="300" height="250" fill="url(#Gradient1)"></rect>
+    <path id="myPath" d="M220 250 Q240 230, 280 270 T 380 300" fill="transparent"></path>
+    <text x="50" y="43" fill="url(#firstLayer)" stroke="black" stroke-width="2"
+          style="font-size: 40px" font-family="Arial" font-weight="bold" >HOMEWORK
+    </text>
+    <text x="10" y="250" fill="#fff"
+          style="font-size:27px" font-family="Arial" font-weight="bold" >
+        <textPath xlink:href="#myPath">IT-Academy</textPath>
+    </text>
 
 </svg>
 
